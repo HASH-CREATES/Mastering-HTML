@@ -1,0 +1,4 @@
+Educational Use License
+This package is prepared for classroom teaching only.
+You may freely modify and redistribute within your school or district.
+Commercial use is not permitted.

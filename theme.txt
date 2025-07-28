@@ -1,0 +1,27 @@
+import idlelib.config
+# define the custom theme settings
+dark_theme = {
+    "normal":"#FFFFFF",  # WHITE TEXT
+    "KEYWORD" : "#FF79C6" , # PINK KEYWORDS
+    "BUILTIN" : "#8BE9FD" , # CYAN BUILT-INS
+    "STRING": "#F1FA8C", # YELLOW STRINGS
+    "COMMENT" : "#6272A4", # GRAY COMMENTS
+    "BACKROUND" : "#282A36," #DARK BACKGROUND
+    "HIT" : "#44475A" , # HIGHLIGHTED TEXT
+ }
+
+# get the path the IDLE's configuration 
+  file
+config_path =
+idlelib.config.idleConf.GetUserDfgDir()
++ "/config-highlight.cfg"
+
+#Write the custom theme settings
+with open(config_path, "w") as f:
+    f.write("[darkmode]\n")
+  for key, value in 
+dark_theme.items():
+    f.writer(f"{key} = {value}\n")
+
+print("dark theme applied! restart IDLE
+to see the changes.") 
